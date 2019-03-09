@@ -1,38 +1,41 @@
 {
-  "name": "webtutor",
-  "version": "1.0.0",
-  "description": "jstest",
-  "main": "index.js",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frozen521/webtutor.git"
-  },
-  "author": "yzq",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/frozen521/webtutor/issues"
-  },
-  "homepage": "https://github.com/frozen521/webtutor#readme",
-  "dependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.1",
-    "express": "^4.16.4",
-    "mongodb": "^3.1.13",
-    "mongoose": "^5.4.18",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1"
-  }
+    "name": "webtutor",
+    "version": "1.0.0",
+    "description": "jstest",
+    "main": "index.js",
+    "directories": {
+        "example": "example",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "babel bable -d dest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/frozen521/webtutor.git"
+    },
+    "author": "yzq",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/frozen521/webtutor/issues"
+    },
+    "homepage": "https://github.com/frozen521/webtutor#readme",
+    "dependencies": {
+        "babel-eslint": "^10.0.1",
+        "babel-preset-es2015": "^6.24.1",
+        "eslint": "^5.15.1",
+        "express": "^4.16.4",
+        "mongodb": "^3.1.13",
+        "mongoose": "^5.4.18",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.3.4",
+        "babel-preset-env": "^1.7.0",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.3.1"
+    }
 }
