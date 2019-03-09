@@ -1,0 +1,31 @@
+{
+  "name": "webtutor",
+  "version": "1.0.0",
+  "description": "jstest",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frozen521/webtutor.git"
+  },
+  "author": "yzq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frozen521/webtutor/issues"
+  },
+  "homepage": "https://github.com/frozen521/webtutor#readme",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  }
+}
