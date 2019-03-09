@@ -1,5 +1,5 @@
-//冒泡排序
-function bubbleSort(arr) {
+// 冒泡排序
+function bubbleSort (arr) {
     var i = j = 0;
     for (i = 1; i < arr.length; i++) {
         for (j = 0; j <= arr.length - i; j++) {
@@ -11,7 +11,8 @@ function bubbleSort(arr) {
             }
         }
     }
+
 }
-var a = [1, 3, 23, 34, 23, 24, 11, 463, 1245, 12, 124]
-bubbleSort(a)
-console.log(a)
+var a = [1, 3, 23, 34, 23, 24, 11, 463, 1245, 12, 124];
+bubbleSort(a);
+console.log(a);
