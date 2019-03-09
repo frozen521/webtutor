@@ -7,4 +7,3 @@ function randomString(n){
 }
 console.log(randomString(12))
 
-export randomString() ;

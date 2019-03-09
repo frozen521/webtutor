@@ -1,7 +1,6 @@
-export function area (radius) {
-    return Math.PI * radius * radius;
-}
-
-export function circumference (radius) {
-    return 2 * Math.PI * radius;
-}
+function adder (x,y) {
+    return x+y;
+}function minus(x,y) {
+  return x-y;
+};
+export {adder,minus};

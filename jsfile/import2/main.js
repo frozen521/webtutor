@@ -1,4 +1,4 @@
-import * as circle from './circle';
+import {adder, minus} from "./circle.js";
 
-console.log('圆面积：' + circle.area(4));
-console.log('圆周长：' + circle.circumference(14));
+console.log(adder(12, 311))
+console.log(minus(33, 11))
