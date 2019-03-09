@@ -6,3 +6,5 @@ function randomString(n){
     return tmp;
 }
 console.log(randomString(12))
+
+export randomString() ;
