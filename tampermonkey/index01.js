@@ -15,5 +15,5 @@
 // ==/UserScript==
 (function () {
     'use strict';
- 
+    $('pre').css('font-family','consolas')
 })();
