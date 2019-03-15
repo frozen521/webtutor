@@ -15,5 +15,5 @@
 // ==/UserScript==
 (function () {
     'use strict';
- $.aj
+ 
 })();
