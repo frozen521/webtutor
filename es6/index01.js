@@ -1,10 +1,21 @@
-
-let fruits = ['Banana']
-
-let arr = fruits; // 通过引用复制 (两个变量引用的是相同的数组)
-
-alert( arr === fruits ); // true
-
-arr.push('Pear'); // 通过引用修改数组
-
-alert( fruits ); // Banana, Pear — 现在只有 2 项了
+var text = parseInt(readline());
+var num = text.replace(/[^0-9]/ig, "");
+var alphabet = text.replace(/[^a-z]+/ig, "");
+var newstrnum = Number(text.replace(alphabet, ''))
+switch (alphabet) {
+    case 'bps':
+        console.log(newstrnum)
+        break;
+    case 'Kbps':
+        console.log(newstrnum * 1000)
+        break;
+    case 'Mbps':
+        console.log(newstrnum * 1000000)
+        break;
+    case 'Gbps':
+        console.log(newstrnum * 1000000000)
+        break;
+    case 'Tbps':
+        console.log(newstrnum * 1000000000000)
+        break;
+}
