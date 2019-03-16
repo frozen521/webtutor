@@ -46,7 +46,7 @@ function uniquefilter(arr) {
  * @license   [license]
  * @version   [version]
  * @param     {arr}    arr [输入端数组]
- * @return    {数组}        [输出的数组]
+ * @return    {Array}        [输出的数组]
  */
 function uniqueinclude(arr) {
     let res = []

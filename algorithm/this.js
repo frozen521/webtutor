@@ -23,4 +23,4 @@ bubbleSortSoul2 = (arr = []) => {
     console.log(`bubbleSortSoul2排序完成用了${count}轮`);
     return arr;
 }
-console.log(bubbleSortSoul2([1, 4, 6, 4, 64, 4, 478,37,94,73,323,36,35,64]))
+console.log(bubbleSortSoul2([1, 4, 6, 4, 64, 4, 478,37,94,73,323,36,35,64]));

@@ -6,7 +6,7 @@
 */
 function Queue() {
 
-    var items = [];
+    let items = [];
 
     this.enqueue = function(element){
         items.push(element);
@@ -21,7 +21,7 @@ function Queue() {
     };
 
     this.isEmpty = function(){
-        return items.length == 0;
+        return items.length === 0;
     };
 
     this.clear = function(){
@@ -36,5 +36,6 @@ function Queue() {
         console.log(items.toString());
     };
 }
-var queue=new Queue();
-console.log(queue.isEmpty())
+
+const queue = new Queue();
+console.log(queue.isEmpty());

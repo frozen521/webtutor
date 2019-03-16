@@ -6,7 +6,7 @@
 */
 function Stack() {
 
-    var items = [];
+    let items = [];
 
     this.push = function(element){
         items.push(element);
@@ -21,7 +21,7 @@ function Stack() {
     };
 
     this.isEmpty = function(){
-        return items.length == 0;
+        return items.length === 0;
     };
 
     this.size = function(){
@@ -41,12 +41,12 @@ function Stack() {
     };
 }
 
-var stack=new Stack();
+const stack = new Stack();
 console.log(stack.isEmpty());
-stack.push(1)
-stack.push(3)
-console.log(stack.peek())
-console.log(stack.size())
+stack.push(1);
+stack.push(3);
+console.log(stack.peek());
+console.log(stack.size());
 stack.clear();
 
-console.log(stack.size())
+console.log(stack.size());

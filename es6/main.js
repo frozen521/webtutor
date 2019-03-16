@@ -1,3 +1,4 @@
+var m=Request
 class Player {
     constructor(name, sex) {
         this._name = name;
