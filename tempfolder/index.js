@@ -11,8 +11,8 @@ function showhowto(circlenum, circlestate, pass) {
     let circleNum = circlenum;
     let circleState = [...circlestate];
     let password = [...pass];
-    var n = 0;
-    
+    const n = 0;
+
     for (let index = 0; index < password.length; index++) {
 
         if (password[index]>circlestate[index]) {

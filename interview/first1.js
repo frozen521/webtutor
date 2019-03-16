@@ -1,26 +1,33 @@
-var name='HELLO'
-var obj = {
-    name: 'ya LV'
-}
+// ==UserScript==
+// @icon            http://weibo.com/favicon.ico
+// @name            a 花里胡哨小脚本
+// @namespace       [url=mailto:1649991905@qq.com]1649991905@qq.com[/url]
+// @author          是河兔兔啊
+// @description     下载微博视频
+// @match           *://weibo.com/tv/v/*
+// @require         http://cdn.bootcss.com/jquery/3.3.1/jquery.min.js
 
-function func() {
-    console.log(this.name);
-}
+// @match        http://*/*
+// @match        https://*/*
+// @run-at       document-end
+// @version         0.0.1
+// @grant         none
+// ==/UserScript==
+(function () {
+    'use strict';
+    //设置网页代码字体
 
-//将func的代码拷贝一份，并且永远改变其拷贝出来的函数中的this，为bind第一个参数所指向的对象。把这     份永远改变着this指向的函数返回给func1.
-var func1 = func.bind(obj);
-//bind方法不会立即执行，是返回一个改变上下文this的函数，要对这个函数调用才会执行。
-func1();  //ya LV
-//可以看到，现在这份改变this之后拷贝过来的函数，this的指向永远是bind（）绑定的那个，不管之后去call    重新指向对象，func1 都不会改变this的指向。永远！可知，bind比call优先级还高。
-func1.call({name:'CALL'});   //ya LV
+    $('pre').css('font-family', 'consolas!important');
+    $('code').css('font-family', 'consolas!important');
 
-//又从func重新拷贝一份永远改变this指向对象为{name:'LI SI'}这个对象的函数，返回给func2.
-var func2 = func.bind({name:'LI SI'});
-func2();   //LI SI
+    function auto_submit() {
+        alert("你试图离开当前窗口,系统将自动提交试卷!");
+//自动提交的代码, 例如: form1.submit();
+    }
 
-//注意，这里是拷贝一份func2(而不是func)的代码，而func2之前已经绑定过去永远改变this的指向了，所以这   里并不去改变！还是会输出原来的最先bind的this指向对象。
-var func3 = func2.bind({name:'ZHANG SAN'});
-func3();   //LI SI
+    window.onblur = auto_submit;
+    window.addEventListener('blur', function (e) {
+        e.stopImmediatePropagation();
 
-//上面对func最初的函数进行了多次绑定，绑定后原函数 func 中的 this 并没有被改变，依旧指向全局对象      window。因为绑定bind的过程是拷贝代码的一个过程，而不是在其自身上修改。window.name = HELLO
-func();   //HELLO
+    }, false)
+})();
