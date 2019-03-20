@@ -11,5 +11,4 @@ app.get('/', function (req, res) {
 
 app.listen(3000, function (req, res) {
   console.log('app is running at port 3000');
-  console.log('http://localhost:3000?q=asdfg');
 });

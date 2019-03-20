@@ -19,8 +19,7 @@ app.get('/', function (req, res, next) {
                     href: $element.attr('href')
                 });
             });
-            console.log(items)
-           JSON.stringify(items)
+
             res.send(items);
         });
 });
