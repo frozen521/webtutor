@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+
+        $.ajax({
+                url: 'data/arr.txt',
+                dataType: 'json',
+                
+                success(data) {
+                    console.log(data)
+                },
+                error(err) {
+                    alert(err)
+                },
+            }
+        )
+
+
+    </script>
+</head>
+<body>
+<input type="button" onclick="setName('哈哈哈哈')" value="提交"/>
+
+</body>
+</html>
