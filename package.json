@@ -29,13 +29,19 @@
         "cheerio": "^1.0.0-rc.2",
         "eslint": "^5.15.3",
         "express": "^4.16.4",
+<<<<<<< HEAD
         "jsdom": "^14.0.0",
+=======
+>>>>>>> 90c11749a081961be86fb5b0f8db2113c6f3f642
         "licia": "^1.4.1",
         "lodash": "^4.17.11",
         "mongodb": "^3.1.13",
         "mongoose": "^5.4.19",
         "postcss-cli": "^6.1.2",
+<<<<<<< HEAD
         "request": "^2.88.0",
+=======
+>>>>>>> 90c11749a081961be86fb5b0f8db2113c6f3f642
         "superagent": "^4.1.0",
         "utility": "^1.15.1",
         "vue": "^2.6.9"

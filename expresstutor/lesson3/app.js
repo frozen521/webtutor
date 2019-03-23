@@ -19,6 +19,7 @@ app.get('/', function (req, res, next) {
                     href: $element.attr('href')
                 });
             });
+<<<<<<< HEAD
             var arr = []
             for (const iterator of items) {
 
@@ -27,6 +28,10 @@ app.get('/', function (req, res, next) {
             }
             res.send('get')
 
+=======
+
+            res.send(items);
+>>>>>>> 90c11749a081961be86fb5b0f8db2113c6f3f642
         });
 });
 

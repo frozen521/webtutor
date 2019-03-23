@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 90c11749a081961be86fb5b0f8db2113c6f3f642
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,6 +11,7 @@
     <script src="https://cdn.bootcss.com/react-dom/16.8.2/cjs/react-dom.development.js"></script>
     <script src="https://cdn.bootcss.com/babel-standalone/7.0.0-beta.3/babel.js"></script>
 </head>
+<<<<<<< HEAD
 
 <body>
     <div class="root"></div>
@@ -34,4 +38,27 @@
     </script>
 </body>
 
+=======
+<body>
+<div class="root"></div>
+<script type="text/babel">
+    function formatName(user) {
+        return user.firstname+""+user.lastname;
+    }
+    const user={
+        firstname:'harper',
+        lastname:'perer'
+    };
+    const element = (
+        <h1>
+        Hello, {formatName(user)}!
+    </h1>
+    );
+    
+    ReactDOM.render(
+        element,document.getElementById('root')
+    )
+</script>
+</body>
+>>>>>>> 90c11749a081961be86fb5b0f8db2113c6f3f642
 </html>
