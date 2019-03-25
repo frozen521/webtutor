@@ -1,1 +1,0 @@
-const sortnaum = (...number) => number.sort()
