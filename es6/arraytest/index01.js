@@ -84,3 +84,41 @@ const go = function*() {
     let n = [3, 4, 5].flatMap(x => [[x * 2]]);
     console.log(n);
 }
+{
+    console.log("________________________________________________");
+    //Array.from();
+    let arr = Array.from({ "0": 1, "1": 2, length: 2 });
+    console.log(arr); //[1,2]
+    [1, 2, 3, 4, 5].reduce((prev, next, index, current) => {
+        //prev 如果reduce传入第二个参数，prev为第二个参数；否则prev为数组第一个元素  往后累加
+        //next 如果reduce传入第二个参数，next为第数组第一个元素；否则next为数组第二个元素  依次累加
+        //index 函数第几次执行1开始
+        //current当前数组
+        return prev + next;
+    });
+    //reduce方法简单实现
+    Array.prototype.myReduce = function(cb, pre) {
+        let prev = pre || this[0];
+        for (let i = pre ? 0 : 1; i < this.length; i++) {
+            prev = cb(prev, this[i], i, this);
+        }
+        return prev;
+    };
+}
+
+{
+    console.log("________________________________________________");
+    let result = [1, 2, 3, 4, 5].filter(function(item) {
+        return item > 3;
+    });
+    console.log(result); //[4,5]
+    //filter简单实现
+    Array.prototype.myFilter = function(cb) {
+        var arr = [];
+        for (var i = 0; i < this.length; i++) {
+            var item = this[i];
+            if (cb(item)) arr.push(item);
+        }
+        return arr;
+    };
+}
