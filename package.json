@@ -9,7 +9,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "babel bable -d dest"
+        "build": "babel babel -d dest"
     },
     "repository": {
         "type": "git",
