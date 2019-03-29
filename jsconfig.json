@@ -8,7 +8,7 @@
         "allowSyntheticDefaultImports": true,
 
 
-        /* Typecheck .js files. */
+       
         "lib": [
             "es6"
         ]

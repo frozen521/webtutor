@@ -29,7 +29,8 @@ function Stack() {
         return this.top;
     }
 }
-var stack = new Stack();
+
+const stack = new Stack();
 console.log(stack.peek());
 stack.push("apple");
 stack.push("banana");

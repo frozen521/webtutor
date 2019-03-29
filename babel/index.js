@@ -1,2 +1,2 @@
-let a=23;
-let m="sdsdf";
+let a = 23;
+let m = "sdsdf";
