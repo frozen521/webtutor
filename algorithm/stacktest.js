@@ -1,42 +1,41 @@
 /*
-* @Author: frozen521
-* @Date:   2019-03-16 15:47:27
-* @Last Modified by:   frozen521
-* @Last Modified time: 2019-03-16 16:28:29
-*/
+ * @Author: frozen521
+ * @Date:   2019-03-16 15:47:27
+ * @Last Modified by:   frozen521
+ * @Last Modified time: 2019-03-16 16:28:29
+ */
 function Stack() {
-
     let items = [];
 
-    this.push = function(element){
+    this.push = function(element) {
         items.push(element);
     };
 
-    this.pop = function(){
+    this.pop = function() {
         return items.pop();
     };
 
-    this.peek = function(){
-        return items[items.length-1];
+    this.peek = function() {
+        return items[items.length - 1];
     };
 
-    this.isEmpty = function(){
+    this.isEmpty = function() {
         return items.length === 0;
     };
 
-    this.size = function(){
+    this.size = function() {
         return items.length;
     };
 
-    this.clear = function(){
+    this.clear = function() {
         items = [];
     };
 
-    this.print = function(){
+    this.print = function() {
         console.log(items.toString());
     };
 
-    this.toString = function(){
+    this.toString = function() {
         return items.toString();
     };
 }
