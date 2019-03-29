@@ -23,7 +23,7 @@
         "lodashjs": "https://cdn.bootcss.com/lodash.js/4.17.11/lodash.min.js",
         "momentjs": "https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js",
         "momentjslocal": "https://cdn.bootcss.com/moment.js/2.24.0/locale/zh-cn.js",
-        "react": "https://cdn.bootcss.com/react/16.8.2/cjs/react.development.js",
+        "react": "https://cdn.bootcss.com/react/16.8.4/cjs/react.development.js",
         "requirejs": "https://cdn.bootcss.com/require.min.js/2.3.6/require.min.js",
         "respondjs": "https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js",
         "threejs": "https://cdn.bootcss.com/three.min.js/r83/three.min.js",

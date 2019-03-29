@@ -5,7 +5,6 @@
  * @Last Modified time: 2019-03-16 17:06:46
  */
 
-
 /**
  * 单向链表
  * @Author    yangzq
@@ -49,7 +48,6 @@ let LinkedList2 = (function() {
         }
         insert(position, element) {
             if (position >= 0 && position <= this.size()) {
-
                 let node = new Node(element),
                     current = this.getHead(),
                     previous,
@@ -122,13 +120,12 @@ let LinkedList2 = (function() {
         }
         toString() {
             let current = this.getHead(),
-                string = '';
+                string = "";
             while (current) {
-                string += current.element + (current.next ? ', ' : '');
+                string += current.element + (current.next ? ", " : "");
                 current = current.next;
             }
             return string;
-
         }
         print() {
             console.log(this.toString());
@@ -136,8 +133,6 @@ let LinkedList2 = (function() {
     }
     return LinkedList2;
 })();
-
-
 
 function DoublyLinkedList() {
     let Node = function(element) {
@@ -148,7 +143,7 @@ function DoublyLinkedList() {
     let length = 0;
     let head = null;
     let tail = null; //NEW
-    this.append = function(element) {
+    this.insert = function(element) {
         let node = new Node(element),
             current;
         if (head === null) {
@@ -169,7 +164,8 @@ function DoublyLinkedList() {
                 previous,
                 index = 0;
             if (position === 0) {
-                if (!head) { //NEW
+                if (!head) {
+                    //NEW
                     head = node;
                     tail = node;
                 } else {
@@ -177,7 +173,8 @@ function DoublyLinkedList() {
                     current.prev = node; //NEW
                     head = node;
                 }
-            } else if (position === length) { ////NEW
+            } else if (position === length) {
+                ////NEW
                 current = tail;
                 current.next = node;
                 node.prev = current;
@@ -203,13 +200,16 @@ function DoublyLinkedList() {
             let current = head,
                 previous,
                 index = 0;
-            if (position === 0) { //NEW
-                if (length === 1) { //
+            if (position === 0) {
+                //NEW
+                if (length === 1) {
+                    //
                     tail = null;
                 } else {
                     head.prev = null;
                 }
-            } else if (position === length - 1) { //NEW
+            } else if (position === length - 1) {
+                //NEW
                 current = tail;
                 tail = current.prev;
                 tail.next = null;
@@ -259,19 +259,19 @@ function DoublyLinkedList() {
     };
     this.toString = function() {
         let current = head,
-            s = current ? current.element : '';
+            s = current ? current.element : "";
         while (current && current.next) {
             current = current.next;
-            s += ', ' + current.element;
+            s += ", " + current.element;
         }
         return s;
     };
     this.inverseToString = function() {
         let current = tail,
-            s = current ? current.element : '';
+            s = current ? current.element : "";
         while (current && current.prev) {
             current = current.prev;
-            s += ', ' + current.element;
+            s += ", " + current.element;
         }
         return s;
     };
@@ -286,5 +286,5 @@ function DoublyLinkedList() {
     };
     this.getTail = function() {
         return tail;
-    }
+    };
 }
