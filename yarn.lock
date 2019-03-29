@@ -1844,6 +1844,15 @@ copy-to@^2.0.1:
   resolved "http://registry.npm.taobao.org/copy-to/download/copy-to-2.0.1.tgz#2680fbb8068a48d08656b6098092bdafc906f4a5"
   integrity sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=
 
+copyer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/copyer/-/copyer-1.0.0.tgz#c36818a8468756d33bfab9fe19aefbf740a14c22"
+  integrity sha512-5kmk2Daa93vjYyTuuYBYfwE/m9MxuK7gtuJ3eC9MmC9pvrdl3q+TsKFrqDcJpYbR9FDYRBHoLK5EEgY1V7bRBg==
+  dependencies:
+    "@babel/core" "^7.4.0"
+    babel-loader "^8.0.5"
+    babel-preset-env "^1.7.0"
+
 core-js-compat@^3.0.0:
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/core-js-compat/download/core-js-compat-3.0.0.tgz#cd9810b8000742535a4a43773866185e310bd4f7"
