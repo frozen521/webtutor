@@ -3030,8 +3030,8 @@
         return baseObj;
     }
 
-    // helper to dynamically append modifier runtime markers to event names.
-    // ensure only append when value is already string, otherwise it will be cast
+    // helper to dynamically insert modifier runtime markers to event names.
+    // ensure only insert when value is already string, otherwise it will be cast
     // to string and cause the type check to miss.
     function prependModifier(value, symbol) {
         return typeof value === "string" ? symbol + value : value;
