@@ -17,13 +17,13 @@
 
 {
     console.log("________________________________________________");
-    var proxy = new Proxy(
-        {},
-        {
-            get: function(target, property) {
-                return 35;
-            }
+    let handler = {
+        get: (target, name) => {
+            return name in target ? target[name] : 29;
         }
-    );
-    console.log(proxy.time);
+    };
+    let p = new Proxy({}, handler);
+    p.a = 1;
+    p.b = undefined;
+    console.log("c" in p, p.c);
 }
