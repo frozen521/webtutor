@@ -27,7 +27,7 @@
         "requirejs": "https://cdn.bootcss.com/require.min.js/2.3.6/require.min.js",
         "respondjs": "https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js",
         "threejs": "https://cdn.bootcss.com/three.min.js/r83/three.min.js",
-        "vue": "https://cdn.bootcss.com/vue/2.6.8/vue.min.js"
+        "vue": "https://cdn.bootcss.com/vue/2.6.10/vue.min.js"
     },
     "packages":
     {
