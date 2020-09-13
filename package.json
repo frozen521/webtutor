@@ -30,7 +30,7 @@
         "global": "^4.4.0",
         "jsdom": "^16.4.0",
         "licia": "^1.25.0",
-        "lodash": "^4.17.20",
+        "lodash": "^4.17.19",
         "mongodb": "^3.6.2",
         "mongoose": "^5.10.5",
         "npm-check-updates": "^9.0.1",
